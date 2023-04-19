@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  microservicesdatabase:
+    image: mysql:5.7
+    container_name: microservicesdatabase
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: microservicesdatabase
+    ports:
+      - '3306:3306'
